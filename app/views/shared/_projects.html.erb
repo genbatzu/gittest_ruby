@@ -1,0 +1,5 @@
+<% @projects.each do |project| %>
+
+  <p><%#= project.inspect %><strong><%= project.title %></strong> - <%= project.description %> <%= "| #{project.percent_complete}" if project.percent_complete != nil  %>
+  </p> <!-- .inspect is for debugging -->
+<% end %>
